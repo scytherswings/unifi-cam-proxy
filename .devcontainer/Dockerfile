@@ -1,4 +1,4 @@
-ARG VARIANT="3.9"
+ARG VARIANT="3.12"
 FROM mcr.microsoft.com/vscode/devcontainers/python:dev-${VARIANT}-buster
 WORKDIR /app
 
