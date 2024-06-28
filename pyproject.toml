@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "unifi-cam-proxy"
 description = "Enable non-Ubiquiti cameras to work with Unifi NVR"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 authors = [
     { name = "Pan0ram1x", email = "pan0ram1x@hotmail.com" },
 ]
@@ -14,10 +14,8 @@ license = { text = "MIT" }
 dynamic = ["dependencies", "readme", "version"]
 classifiers = [
     "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
 ]
 keywords = [
     "unifi",
