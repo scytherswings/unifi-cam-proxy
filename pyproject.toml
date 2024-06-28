@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "unifi-cam-proxy"
 description = "Enable non-Ubiquiti cameras to work with Unifi NVR"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 authors = [
     { name = "Pan0ram1x", email = "pan0ram1x@hotmail.com" },
 ]
@@ -30,7 +30,7 @@ keywords = [
 "Homepage" = "https://github.com/pan0ram1x/unifi-cam-proxy"
 "Bug Tracker" = "https://github.com/pan0ram1x/unifi-cam-proxy/issues"
 "Source Code" = "https://github.com/pan0ram1x/unifi-cam-proxy"
-"Documentation" = "https://unifi-cam-proxy.com/"
+"Documentation" = "https://github.com/pan0ram1x/unifi-cam-proxy"
 
 
 [project.optional-dependencies]
