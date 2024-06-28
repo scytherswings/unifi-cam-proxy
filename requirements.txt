@@ -10,4 +10,3 @@ packaging
 uiprotect
 reolinkapi
 websockets>=9.0.1
-xmltodict

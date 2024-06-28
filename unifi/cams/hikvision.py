@@ -7,8 +7,7 @@ from pathlib import Path
 from typing import Any, Union
 
 import httpx
-import xmltodict
-from hikvisionapi import AsyncClient
+from hikvisionapi import AsyncClient, xml2dict
 
 from unifi.cams.base import UnifiCamBase
 
@@ -99,7 +98,7 @@ class HikvisionCam(UnifiCamBase):
                 }
             }
             await self.cam.PTZCtrl.channels[1].absolute(
-                method="put", data=xmltodict.unparse(req, pretty=True)
+                method="put", data=xml2dict.unparse(req, pretty=True)
             )
 
     async def get_stream_source(self, stream_index: str) -> str:
