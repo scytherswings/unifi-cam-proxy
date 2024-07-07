@@ -132,7 +132,7 @@ class Reolink(UnifiCamBase):
             fps = self.stream_fps[1]
 
         return (
-            "-ar 32000 -ac 1 -codec:a aac -b:a 32k -c:v copy -vbsf"
+            "-acodec copy -c:v copy -vbsf"
             f' "h264_metadata=tick_rate={fps * 2}"'
         )
 
