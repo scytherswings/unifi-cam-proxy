@@ -3,6 +3,8 @@ import json
 import logging
 import tempfile
 from pathlib import Path
+import string
+from random import choices
 
 import aiohttp
 import reolinkapi
@@ -62,11 +64,12 @@ class Reolink(UnifiCamBase):
         )
 
     async def get_snapshot(self) -> Path:
+        rs = ''.join(choices(string.ascii_uppercase + string.digits, k=10))
         img_file = Path(self.snapshot_dir, "screen.jpg")
         url = (
             f"http://{self.args.ip}"
             f"/cgi-bin/api.cgi?cmd=Snap&channel={self.args.channel}"
-            f"&rs=6PHVjvf0UntSLbyT&user={self.args.username}"
+            f"&rs={rs}&user={self.args.username}"
             f"&password={self.args.password}"
         )
         self.logger.info(f"Grabbing snapshot: {url}")
