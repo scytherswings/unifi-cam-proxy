@@ -10,7 +10,7 @@ import aiohttp
 import reolinkapi
 from yarl import URL
 
-from unifi.cams.base import UnifiCamBase, # SmartDetectObjectType
+from unifi.cams.base import UnifiCamBase #, SmartDetectObjectType
 
 
 class Reolink(UnifiCamBase):
